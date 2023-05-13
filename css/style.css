@@ -53,6 +53,11 @@ li {
     list-style: none;
 }
 
+button {
+    background: white;
+    cursor: pointer;
+}
+
 a,
 a:visited,
 a:hover {
@@ -133,6 +138,29 @@ a:hover {
     transform: rotate(45deg); 
 }
 
+.btn__open{
+    background-color:#F2F2F2;
+    font-family: 'TT Lakes';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #1B1C21;   
+}
+
+.btn__open-img{
+    margin-right: 9px;
+}
+
+
+.show_all{
+    margin-left: 24px; 
+    margin-top: 16px;  
+    display: none;
+}
+
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -178,75 +206,15 @@ a:hover {
         margin-bottom: 16px;
     }
 
-    .brands__arrows-btn {
+
+    .show_all {
         display: block;
-        align-items: center;
-        font-family: 'TT Lakes';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #1B1C21;
-        margin-top: 8px;
-        margin-left: 57px;
-        padding-bottom: 34px;
-        position: relative;
-    }
-
-    .brands__arrows-btn::before {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 12px;
-        width: 5.65px;
-        height: 5.65px;
-        border: 2px solid #41F6D7;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(135deg);
-    }
-
-    .brands__arrows-btn--clicked::before {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 12px;
-        width: 5.65px;
-        height: 5.65px;
-        border: 2px solid #41F6D7;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(315deg);
-    }
-
-    .brands__arrows-btn::after {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 6px;
-        width: 5.65px;
-        height: 5.65px;
-        border: 2px solid #41F6D7;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(135deg);
-
-    }
-    
-    .brands__arrows-btn--clicked::after {
-        content: '';
-        position: absolute;
-        left: -20px;
-        top: 6px;
-        width: 5.65px;
-        height: 5.65px;
-        border: 2px solid #41F6D7;
-        border-bottom: none;
-        border-left: none;
-        transform: rotate(315deg);
     }
 }
+   
+
+
+
 
 @media screen and (min-width: 1120px) {
     .brands__swiper-wrapper {
@@ -259,3 +227,23 @@ a:hover {
         min-width: 240px;
     }
 }
+
+.show_all{
+    margin-left: 32px;
+}
+
+/*-------------ADD---CLASS----------------*/
+  
+.over{
+    max-height: fit-content;
+ }
+ 
+ .arrows_rotate{
+     transition: all 0.3s;
+     transform: rotate(180deg);
+ }
+ 
+ .arrows_revers{
+     transition: all 0.3s;
+     transform: rotate(-360deg);
+ }
