@@ -29,11 +29,11 @@ function mobileSlider() {
 
     if (window.innerWidth > 767) {
         slider.dataset.mobile = 'false';
-        
+
         if (slider.classList.contains('swiper-initialized')) {
-         mySwiper.destroy();   
+            mySwiper.destroy();
         }
-        
+
     }
 }
 
@@ -41,27 +41,27 @@ mobileSlider();
 
 window.addEventListener('resize', () => {
     mobileSlider();
-    })
-    
-    
-    let img = document.querySelector('.btn__open-img');
-    let swiperW = document.querySelector('.brands__swiper');    
-    let btn = document.querySelector('.btn__open');
+})
 
-    btn.addEventListener('click', function(evt){ 
-      evt.preventDefault();
-      if (swiperW.classList.contains('over')) {
+
+let img = document.querySelector('.btn__open-img');
+let swiperW = document.querySelector('.brands__swiper');
+let btn = document.querySelector('.btn__open');
+
+btn.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    if (swiperW.classList.contains('over')) {
 
         swiperW.classList.remove('over');
-        document.querySelector('.text').textContent="Показать все";
+        document.querySelector('.text').textContent = "Показать все";
         img.classList.remove('arrows_rotate');
-        img.classList.add('arrows_revers');      
-      
-      }else{
+        img.classList.add('arrows_revers');
 
-      swiperW.classList.add('over');
-      document.querySelector('.text').textContent="Скрыть";
-      img.classList.add('arrows_rotate');
-      img.classList.remove('arrows_revers');
-      }
-    })
+    } else {
+
+        swiperW.classList.add('over');
+        document.querySelector('.text').textContent = "Скрыть";
+        img.classList.add('arrows_rotate');
+        img.classList.remove('arrows_revers');
+    }
+})

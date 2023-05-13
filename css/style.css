@@ -92,7 +92,7 @@ a:hover {
 }
 
 .swiper-toggle {
-   max-height: 700px;
+    max-height: 700px;
 }
 
 .brands__swiper-wrapper {
@@ -135,28 +135,28 @@ a:hover {
     border: 2px solid #FF3E79;
     border-left: transparent;
     border-bottom: transparent;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
 
-.btn__open{
-    background-color:#F2F2F2;
+.btn__open {
+    background-color: #F2F2F2;
     font-family: 'TT Lakes';
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: left;
-    color: #1B1C21;   
+    color: #1B1C21;
 }
 
-.btn__open-img{
+.btn__open-img {
     margin-right: 9px;
 }
 
 
-.show_all{
-    margin-left: 24px; 
-    margin-top: 16px;  
+.show_all {
+    margin-left: 24px;
+    margin-top: 16px;
     display: none;
 }
 
@@ -178,11 +178,11 @@ a:hover {
 }
 
 .swiper-pagination-bullet:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #B5B6BC; 
+    background-color: #B5B6BC;
 }
 
 .brands__arrows-btn {
@@ -199,7 +199,7 @@ a:hover {
         padding-top: 24px;
         padding-left: 24px;
     }
-    
+
     .brands__swiper-slide {
         min-width: 224px;
         margin-right: 24px;
@@ -211,7 +211,7 @@ a:hover {
         display: block;
     }
 }
-   
+
 
 
 
@@ -221,6 +221,7 @@ a:hover {
         flex-wrap: wrap;
         padding-left: 32px;
     }
+
     .brands__swiper-slide {
         margin-right: 32px;
         margin-bottom: 16px;
@@ -228,22 +229,21 @@ a:hover {
     }
 }
 
-.show_all{
+.show_all {
     margin-left: 32px;
 }
 
-/*-------------ADD---CLASS----------------*/
-  
-.over{
+
+.over {
     max-height: fit-content;
- }
- 
- .arrows_rotate{
-     transition: all 0.3s;
-     transform: rotate(180deg);
- }
- 
- .arrows_revers{
-     transition: all 0.3s;
-     transform: rotate(-360deg);
- }
+}
+
+.arrows_rotate {
+    transition: all 0.3s;
+    transform: rotate(180deg);
+}
+
+.arrows_revers {
+    transition: all 0.3s;
+    transform: rotate(-360deg);
+}
